@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         
         Journal::factory(10)->create([
             'entry' => 'Hoy es mi cum !!!',
-            'emotion' => 'img/emotions/alegria.jpg',
+            'emotion' => 'img/emotions/alegria.webp',
         ]);
 
         //Journal::factory(10)->create();
