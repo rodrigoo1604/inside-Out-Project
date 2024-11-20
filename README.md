@@ -1,66 +1,88 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎭 InsideOutApp  
+This project is an API that collects data from a diary about emotions based on the eponymous film. The data is displayed in table form, integrating a CRUD.
+The main objective is to practice with the [Laravel](https://laravel.com) framework.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+## 🌄 Project views  
+Imagenes
+
+## 💻 Languages ​​and tools  
+![](https://skillicons.dev/icons?i=php,html,css,js)
+![](https://skillicons.dev/icons?i=laravel,git,github,vscode,)
+
+<p>
+<img src="https://static.vecteezy.com/system/resources/previews/032/329/175/non_2x/canva-icon-logo-symbol-free-png.png" alt="Incono azul de Canvas" width="50" style="margin-right: 3px"/>
+<img src="https://cdn-icons-png.flaticon.com/256/5968/5968701.png" alt="Icono negro de Figma" width="50">
 </p>
 
-## About Laravel
+## ⚙️ Installation prerequisites
+🟢Install [Node.js](https://nodejs.org/en/download/source-code)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+🟢Install [Composer](https://getcomposer.org/download/)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Installation Guide 
+1️⃣ First, open a terminal in the folder where you want the repository to be cloned and enter this command:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+`git clone https://github.com/Manusitox360/inside-Out-Project.git`
 
-## Learning Laravel
+2️⃣ In your preferred environment, open the project you cloned; you will need three consoles for the next step.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+▷Console 1:
+    `npm install` `npm run dev`
+    
+▷Console 2:
+    `composer install` `php artisan serve`
+    
+▷Console 3: 
+    `php artisan migrat:fresh`
+    
+3️⃣ In the second console that you have opened, press the ctrl key and click on the link to localhost that it offers you. It should take you to the main view of the project where the journal is located.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+⚠️ If you have done the previous steps and the view has not opened correctly, go back to the third command console and enter this:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+`php artisan key:generate` `php artisan config:cache` 
 
-## Laravel Sponsors
+## 🌐 Endpoints 
+We have generated five endpoints, four for each CRUD function and one extra for the show button.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### ✏️ Create
+`pegar aqui endpoint`
 
-### Premium Partners
+### 📖 Read
+`pegar aqui endpoint`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### ✏️✏️ Update
+`pegar aqui endpoint`
 
-## Contributing
+### ❌ Delete
+`pegar aqui endpoint`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 👁️ Show
+`pegar aqui endpoint`
 
-## Code of Conduct
+## 🧪 Tests 
+All tests passed. Introduce this line on your console to check it:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+`./vendor/bin/phpunit tests`
 
-## Security Vulnerabilities
+*añadir capura de este resultado*
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+If you want to launch the tests and view them you can put these commands in console 3:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+`php artisan test --coverage` `php artisan test --coverage-html=coverage-report`
+
+*añadir comandos para carpeta de resultados de test y captura de los resultados*
+
+## 🗂️ Diagram made (DDBB) 
+For the correct structuring of the database, we have carried out this test in [drawSQL](https://drawsql.app) that will serve as a basis for the creation of the future table.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90e8ae8d-d0a6-491f-8284-7002a0bda772" alt="Descripción de la imagen" width="200"/>
+</p>
+
+## 👩‍💻 About us  
+We are a group of developers enhancing our skills through a bootcamp focused on frontend, backend, and AWS.
+- [Rodrigo Lastra Pescador](https://github.com/rodrigoo1604)
+- [José Ignacio Gavilán Sánchez](https://github.com/sr-calcetines)
+- [Alvaro Cervera Vigara](https://github.com/Kalixto73a)
+- [Manuel Espinosa Guillen](https://github.com/Manusitox360)
