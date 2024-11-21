@@ -69,4 +69,15 @@ class JournalTest extends TestCase
                 ->assertJsonCount(1)
                 ->assertJsonFragment($data);
     }
+    public function test_CheckIfFunctionShowWorks(){
+        $response = $this->post(route('apistore'), [
+            'entry' => "If this doesn't work I will end up like this",
+            'emotion' => "img/emotions/anger.webp"
+        ]);
+        $data = ['entry' => "If this doesn't work I will end up like this", 'emotion' => "img/emotions/anger.webp"];
+        $response = $this->get(route('apishow', 1));
+        $response->assertStatus(200)
+                ->assertJsonCount(5)
+                ->assertJsonFragment($data);
+    }
 }
