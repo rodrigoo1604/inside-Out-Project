@@ -1,0 +1,45 @@
+footer {
+    background: #31336e;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-dots .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.footer-dots .joy {
+    background: #ffe259;
+}
+
+.footer-dots .sadness {
+    background: #5a91f2;
+}
+
+.footer-dots .anger {
+    background: #ff4c4c;
+}
+
+.footer-dots .fear {
+    background: #9068be;
+}
+
+.footer-dots .disgust {
+    background: #86c14d;
+}

@@ -1,3 +1,5 @@
 <header>
-    <h1>My Journal with Emotions</h1>
+    <div class="logo">
+        <h1>Inside Out App</h1>
+    </div>
 </header>
