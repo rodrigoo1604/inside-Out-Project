@@ -16,5 +16,6 @@ class JournalController extends Controller
         //
         $journals = Journal::get();
         return view('home', compact('journals'));
+        
     }
 }
