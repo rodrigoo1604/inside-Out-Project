@@ -64,5 +64,7 @@ class JournalController extends Controller
     public function destroy(string $id)
     {
         //
+        $journal = Journal::find($id);
+        $journal -> delete; 
     }
 }
