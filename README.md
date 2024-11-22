@@ -53,19 +53,19 @@ The main objective is to practice with the [Laravel](https://laravel.com) framew
 We have generated five endpoints, four for each CRUD function and one extra for the show button.
 
 ### ✏️ Create (POST)
-`http://127.0.0.1:8000/api/journal`
+`http://127.0.0.1:8000/api/journals`
 
 ### 📖 Read (GET)
-`http://127.0.0.1:8000/api/journal`
+`http://127.0.0.1:8000/api/journals`
 
 ### ✏️✏️ Update (PUT)
-`http://127.0.0.1:8000/api/journal/id`
+`http://127.0.0.1:8000/api/journals/id`
 
 ### ❌ Destroy (DELETE)
-`http://127.0.0.1:8000/api/journal/id`
+`http://127.0.0.1:8000/api/journals/id`
 
 ### 👁️ Show (GET)
-`http://127.0.0.1:8000/api/journal/id`
+`http://127.0.0.1:8000/api/journals/id`
 
 ## 🧪 Tests 
 All tests passed. Introduce this line on your console to check it:
