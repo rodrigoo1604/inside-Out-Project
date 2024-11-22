@@ -3,7 +3,8 @@ This project is an API that collects data from a diary about emotions based on t
 The main objective is to practice with the [Laravel](https://laravel.com) framework.
 
 ## 🌄 Project views  
-Imagenes
+![Captura de pantalla 2024-11-21 142625](https://github.com/user-attachments/assets/ce3e2eaf-3d0a-4584-9e36-30c3e1d07c24)
+*Main view*
 
 ## 💻 Languages ​​and tools  
 ![](https://skillicons.dev/icons?i=php,html,css,js)
@@ -11,7 +12,6 @@ Imagenes
 
 <p>
 <img src="https://static.vecteezy.com/system/resources/previews/032/329/175/non_2x/canva-icon-logo-symbol-free-png.png" alt="Incono azul de Canvas" width="50" style="margin-right: 3px"/>
-<img src="https://cdn-icons-png.flaticon.com/256/5968/5968701.png" alt="Icono negro de Figma" width="50">
 </p>
 
 ## ⚙️ Installation prerequisites
@@ -20,9 +20,16 @@ Imagenes
 🟢Install [Composer](https://getcomposer.org/download/)
 
 ## 🛠️ Installation Guide 
-1️⃣ First, open a terminal in the folder where you want the repository to be cloned and enter this command:
+0️⃣ Before starting to install the project, you will need to create a database (we have used mysql via xampp) and name it: `insideOutApp`
+
+1️⃣ Open a terminal in the folder where you want the repository to be cloned and enter this command:
 
 `git clone https://github.com/Manusitox360/inside-Out-Project.git`
+
+2️⃣ As you clone the repository, it will appear all the elements on it; you need to rename the file ".env.example" to ".env" and fill it with theese values:
+
+![image](https://github.com/user-attachments/assets/e31e611a-04c8-4a1e-abf0-7f22c13c1007)
+
 
 2️⃣ In your preferred environment, open the project you cloned; you will need three consoles for the next step.
 
@@ -34,6 +41,7 @@ Imagenes
     
 ▷Console 3: 
     `php artisan migrat:fresh`
+    `php artisan migrat:fresh --seed`
     
 3️⃣ In the second console that you have opened, press the ctrl key and click on the link to localhost that it offers you. It should take you to the main view of the project where the journal is located.
 
@@ -44,34 +52,41 @@ Imagenes
 ## 🌐 Endpoints 
 We have generated five endpoints, four for each CRUD function and one extra for the show button.
 
-### ✏️ Create
-`pegar aqui endpoint`
+### ✏️ Create (POST)
+`http://127.0.0.1:8000/api/journal`
 
-### 📖 Read
-`pegar aqui endpoint`
+### 📖 Read (GET)
+`http://127.0.0.1:8000/api/journal`
 
-### ✏️✏️ Update
-`pegar aqui endpoint`
+### ✏️✏️ Update (PUT)
+`http://127.0.0.1:8000/api/journal/id`
 
-### ❌ Delete
-`pegar aqui endpoint`
+### ❌ Destroy (DELETE)
+`http://127.0.0.1:8000/api/journal/id`
 
-### 👁️ Show
-`pegar aqui endpoint`
+### 👁️ Show (GET)
+`http://127.0.0.1:8000/api/journal/id`
 
 ## 🧪 Tests 
 All tests passed. Introduce this line on your console to check it:
 
 `./vendor/bin/phpunit tests`
 
-*añadir capura de este resultado*
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/51783ff0-aed0-4fed-b0b7-c54dfc45f5b5" alt="Descripción de la imagen" width="500"/>
+</p>
 
 If you want to launch the tests and view them you can put these commands in console 3:
 
 `php artisan test --coverage` `php artisan test --coverage-html=coverage-report`
 
-*añadir comandos para carpeta de resultados de test y captura de los resultados*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2845684f-2785-4eb0-a6ca-e0807c2a5764" alt="Descripción de la imagen" width="500"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1e477319-215f-4d8c-8a05-4832504d66a7" alt="Descripción de la imagen" width="500"/>
+</p>
 
 ## 🗂️ Diagram made (DDBB) 
 For the correct structuring of the database, we have carried out this test in [drawSQL](https://drawsql.app) that will serve as a basis for the creation of the future table.
