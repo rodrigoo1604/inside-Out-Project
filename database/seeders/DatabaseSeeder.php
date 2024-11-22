@@ -22,53 +22,8 @@ class DatabaseSeeder extends Seeder
         //]);
         
         Journal::factory()->create([
-            'entry' => 'Its my birthday !!!',
-            'emotion' => 'img/emotions/joy.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I lost the bus',
-            'emotion' => 'img/emotions/sadness.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I forgot to bring my lunch',
-            'emotion' => 'img/emotions/anger.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'The project is due tomorrow',
-            'emotion' => 'img/emotions/anxiety.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I have nothing to do',
+            'entry' => 'Today we presented our project and after that we didnt do much, also after a long week oof doing the project and assignments I dont feel like doing anything',
             'emotion' => 'img/emotions/boredom.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I have broccoli for lunch',
-            'emotion' => 'img/emotions/disgust.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I peed my pants',
-            'emotion' => 'img/emotions/embarrasment.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I would like that hairstyle',
-            'emotion' => 'img/emotions/envy.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'Why is that clown on my bedroom?',
-            'emotion' => 'img/emotions/fear.webp',
-        ]);
-
-        Journal::factory()->create([
-            'entry' => 'I miss my grandma',
-            'emotion' => 'img/emotions/nostalgia.webp',
         ]);
 
         //Journal::factory(10)->create();
